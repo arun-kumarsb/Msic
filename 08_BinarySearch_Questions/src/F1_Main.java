@@ -11,6 +11,16 @@ public class F1_Main {
         // 0, 1, 2, 3, 04, 05, 06
 
         /*
+         * until the while condition start is less than or equal to
+         * end hence when the conditin fails i.e start > end we are at this
+         * 
+         * S M E
+         * E M S
+         * for ceiling we have to retun arr[start] and for floor we have to retun
+         * arr[end]
+         */
+
+        /*
          * floor is the gratest no that is smaller or equal to target no.
          */
         int[] arr = { 2, 3, 5, 9, 14, 16, 18 };
