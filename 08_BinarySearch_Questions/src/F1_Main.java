@@ -13,7 +13,6 @@ public class F1_Main {
         /*
          * until the while condition start is less than or equal to
          * end hence when the conditin fails i.e start > end we are at this
-         * 
          * S M E
          * E M S
          * for ceiling we have to retun arr[start] and for floor we have to retun
@@ -34,6 +33,9 @@ public class F1_Main {
         int start = 0;
         int end = arr.length - 1;
         while (start <= end) {
+            if (target > arr[arr.length - 1]) {
+                return -1;
+            }
             int mid = start + (end - start) / 2;
             if (target > arr[mid]) {
                 start = mid + 1;
@@ -50,6 +52,9 @@ public class F1_Main {
         int start = 0;
         int end = arr.length - 1;
         while (start <= end) {
+            if (target < arr[arr.length - 1]) {
+                return -1;
+            }
             int mid = start + (end - start) / 2;
             if (target > arr[mid]) {
                 start = mid + 1;
