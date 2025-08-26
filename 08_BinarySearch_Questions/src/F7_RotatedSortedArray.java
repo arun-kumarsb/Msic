@@ -1,7 +1,8 @@
 public class F7_RotatedSortedArray {
     public static void main(String[] args) {
-        int[] RNums = { 9, 10, 12, 2, 4, 5, 7, 8 };
+        int[] RNums = { 3, 4, 5, 6, 8, 10, 0, 1, 2 };
         System.out.println(findPivot(RNums));
+        System.out.println(search(RNums, 1));
     }
 
     // rorted binary search // target // find indexin rorted array
@@ -44,6 +45,35 @@ public class F7_RotatedSortedArray {
      * bigger elements
      * 
      */
+    /*
+     * search in rotated array
+     * 
+     * pivot element == target elemet
+     * 
+     * target > start elemet // start till pivot - 1; end = pivot - 1;
+     * all elemnt beofre pivot is smaller than start
+     * 
+     * otherwise search in next array target < start element all element are bigger
+     * than target
+     * pivot+1 till lenth -1;
+     */
+
+    public static int search(int[] arr, int target) {
+        int pivot = findPivot(arr);
+        if (pivot == -1) {
+            // normal bianry search
+            return OrderAgnosticBinarySearch(target, arr, 0, arr.length - 1);
+        }
+        if (arr[pivot] == target) {
+            return pivot;
+        }
+        if (target >= arr[0]) {
+            return OrderAgnosticBinarySearch(target, arr, 0, pivot - 1);
+        } else {
+            return OrderAgnosticBinarySearch(target, arr, pivot + 1, arr.length - 1);
+        }
+    }
+
     public static int findPivot(int[] arr) {
         int start = 0;
         int end = arr.length - 1;
@@ -58,6 +88,31 @@ public class F7_RotatedSortedArray {
                 end = mid - 1;
             } else if (arr[mid] > arr[start]) {
                 start = mid + 1;
+            }
+        }
+        return -1;
+    }
+
+    public static int OrderAgnosticBinarySearch(int target, int[] nums, int start, int end) {
+
+        boolean isAsc = nums[start] < nums[end];
+        while (start <= end) {
+            int mid = start + (end - start) / 2;
+            if (nums[mid] == target) {
+                return mid;
+            }
+            if (isAsc) {
+                if (target > nums[mid]) {
+                    start = mid + 1;
+                } else if (target < nums[mid]) {
+                    end = mid - 1;
+                }
+            } else {
+                if (target < nums[mid]) {
+                    start = mid + 1;
+                } else if (target > nums[mid]) {
+                    end = mid - 1;
+                }
             }
         }
         return -1;
