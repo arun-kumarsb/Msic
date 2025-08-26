@@ -12,7 +12,8 @@ public class F5_Mountain {
     /// 0 1 2 3 4 5 6 7
     /// s-----m-------e
     // [1,2,3,5,6,4,3,2]
-    // if e[mid] > e[mid+1] --> we are at decreasing part of array // end = mid
+    // if e[mid] > e[mid+1] --> we are at decreasing part of array // end = mid //
+    // we can still check the privious element
     // if e[mid] < e[mid+1] --> we are at increasing part of array // start = mid+1;
     // loop break --> start = end;
 
