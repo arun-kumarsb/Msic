@@ -38,7 +38,6 @@
  * - 'println' is a method to print text followed by a newline.
  */
 
-package com.arun;
 
 // This is the Main class. In Java, every application must have at least one class.
 // The 'public' keyword means this class is accessible from other classes.

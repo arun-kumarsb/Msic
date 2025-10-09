@@ -48,7 +48,7 @@ public class Q1_Largest {
         }
         System.out.println(max1);
         
-
+        // efficient trick
         int max2 = Math.max(num3, Math.max(num1, num2));
         System.out.println(max2);
 

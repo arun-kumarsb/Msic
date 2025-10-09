@@ -8,8 +8,8 @@ public class F1_Loops {
 
         // while loop example
         int count = 1;
-        while (count <= 20){
-            System.out.print(count+" ");
+        while(count <= 20) {
+            System.out.println(count);
             count++;
         }
         System.out.println();

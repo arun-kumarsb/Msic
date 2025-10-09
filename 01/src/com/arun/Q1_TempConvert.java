@@ -1,4 +1,4 @@
-package com.arun;
+
 
 import java.util.Scanner;
 
@@ -11,6 +11,6 @@ public class Q1_TempConvert {
         Float CTemp = in.nextFloat();
         float FTemp = CTemp * 9/5 + 32; 
         System.out.println("Tempearature in Farenhiet: " + FTemp);
-
+        in.close();
     }
 }
