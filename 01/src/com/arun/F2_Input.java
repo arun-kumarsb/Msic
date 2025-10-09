@@ -1,4 +1,3 @@
-package com.arun;
 
 import java.util.Scanner;
 
@@ -12,5 +11,6 @@ public class F2_Input {
 
         String b = input.next();
         System.out.println(b);
+        input.close();
     }
 }

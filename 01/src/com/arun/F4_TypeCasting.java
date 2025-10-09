@@ -1,4 +1,3 @@
-package com.arun;
 
 import java.util.Scanner;
 

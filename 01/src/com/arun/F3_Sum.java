@@ -1,4 +1,4 @@
-package com.arun;
+
 
 import java.util.Scanner;
 
@@ -12,5 +12,6 @@ public class F3_Sum {
         num2 = in.nextInt(); // Read second integer from user input
         sum = num1 + num2; // Calculate the sum of the two integers
         System.out.println("Sum = " + sum);
+        in.close();
     }
 }
