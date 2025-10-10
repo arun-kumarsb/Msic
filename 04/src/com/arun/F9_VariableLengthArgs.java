@@ -36,7 +36,7 @@ public class F9_VariableLengthArgs {
     }
 
     // Example 1: Method with varargs
-    static void printNumbers(int... numbers) {
+    static void printNumbers(int ...numbers) {
         // for (int num : numbers) {
         //     System.out.print(num + " ");
         // }
@@ -45,7 +45,7 @@ public class F9_VariableLengthArgs {
     }
 
     // Example 2: Varargs with another parameter
-    static void printWithMessage(String message, int... values) {
+    static void printWithMessage(String message, int ...values) {
         System.out.print(message + " ");
         // for (int v : values) {
         //     System.out.print(v + " ");

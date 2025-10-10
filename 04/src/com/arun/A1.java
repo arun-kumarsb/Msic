@@ -1,4 +1,4 @@
-package com.arun;
+ package com.arun;
 
 import java.util.Scanner;
 
@@ -24,6 +24,8 @@ public class A1 {
         //     max = c;
         // }
         // System.out.println(max);
+
+        // or
 
         System.out.println(Math.max(a, Math.max(b, c)));
     }

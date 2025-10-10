@@ -26,16 +26,25 @@ public class App {
         //     System.out.println("A red fruit");
         // }
 
-        switch (fruit) {
-            case "Mango":
-                System.out.println("King of fruits");
-                break;
-            case "Apple" :
-                System.out.println("A Red Fruit");
+        // switch (fruit) {
+        //     case "Mango":
+        //         System.out.println("King of fruits");
+        //         break;
+        //     case "Apple" :
+        //         System.out.println("A Red Fruit");
                 
-            default:
-                break;
-        }
+        //     default:
+        //         break;
+        // }
+        
+        switch(fruit){
+            case "Mango" -> System.out.println("Yello");
+            case "Apple" -> System.out.println("Red");
+            default -> System.out.println("Invalid");
+        } 
+
+
+
         in.close();
     }
 }

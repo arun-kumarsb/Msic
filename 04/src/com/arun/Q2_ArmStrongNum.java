@@ -8,6 +8,8 @@ public class Q2_ArmStrongNum {
         int num = in.nextInt();
         boolean ans = isArmStrongNum(num);
         System.out.println(ans);
+
+        ArmStrongNum();
         in.close();
     }
     static boolean isArmStrongNum(int num){
@@ -22,6 +24,14 @@ public class Q2_ArmStrongNum {
             return true;
         }
         return false;
+    }
+    static int ArmStrongNum(){
+        for(int i = 100; i <= 999; i++){
+            if(isArmStrongNum(i)){
+                System.out.println(i);
+            }
+        }
+        return 0;
     }
 
 }

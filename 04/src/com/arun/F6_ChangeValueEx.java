@@ -13,7 +13,7 @@ public class F6_ChangeValueEx {
     public static void change(int[] arr) {
         // arr = new int[] {90, 2, 3, 4, 5, 6};
         arr[0] = 99; // modifying the object
-        // any changes to yhe object vai this ref variable same object will be changed
+        // any changes to the object via this ref variable same object will be changed
     }
 
     /*
