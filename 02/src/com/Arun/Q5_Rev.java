@@ -3,20 +3,20 @@ package com.Arun;
 public class Q5_Rev {
     // n = 23597 --> 79532
     public static void main(String[] args) {
-        int num = 23597;
-        int rev = 0;
-        while (num != 0) {
-            int rem = num % 10;
-            rev = rev*10 + rem;
-            num = num / 10;
+        int n = 23597;
+        int ans = 0;
+        while (n != 0) {
+            int rem = n % 10;
+            ans = ans * 10 + rem;
+            n /= 10;
         }
-        System.out.println(rev);
+        System.out.println(ans);
     }
 
     // logic 
     /*
      * n = 2345 --> 5432
-     * rev = 0
+     * ans = 0
      * 
      * ans = 0*10 + 5
      * ans = 5*10 + 4

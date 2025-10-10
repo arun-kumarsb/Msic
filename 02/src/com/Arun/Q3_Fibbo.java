@@ -14,19 +14,18 @@ public class Q3_Fibbo {
 
 
         // for(int i = 2; i <= n; i++){
-        //     int temp = a;
-        //     a = b;
-        //     b = b + temp;
+        //     int temp = b;
+        //     b = a + b;
+        //     a = temp;
         // }
 
-        int count = 2;
-        while (count <= n) {
+        int i = 2;
+        while (i <= n) {
             int temp = b;
             b = a + b;
             a = temp;
-            count++;
+            i++;
         }
-
 
         System.out.println(b);
         in.close();

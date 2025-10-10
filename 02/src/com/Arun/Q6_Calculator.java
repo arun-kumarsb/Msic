@@ -33,6 +33,7 @@ public class Q6_Calculator {
                 System.out.println(result);
             }
             else if (op == 'X' || op == 'x') {
+                System.out.println("Thanks");
                 break;
             }
             else {

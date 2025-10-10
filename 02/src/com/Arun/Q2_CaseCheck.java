@@ -5,6 +5,8 @@ import java.util.Scanner;
 public class Q2_CaseCheck {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
+        String word = "Hello";
+        System.out.println(word.charAt(0));
 
         // System.out.println(in.next().trim().charAt(0));
 
@@ -16,5 +18,6 @@ public class Q2_CaseCheck {
             System.out.println("The Char is Uppercase");
         }
         in.close();
+        // char ch = in.next().trim().chatAt(0)
     }
 }
