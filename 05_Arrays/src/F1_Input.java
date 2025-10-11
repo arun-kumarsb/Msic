@@ -1,4 +1,4 @@
-package com.Arun;
+
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -39,7 +39,7 @@ public class F1_Input {
 
 
 
-        // arrays of objects
+        // arrays of non primitives objects
         String[] str = new String[4];
         for (int i = 0; i < str.length; i++) {
             str[i] = in.next();

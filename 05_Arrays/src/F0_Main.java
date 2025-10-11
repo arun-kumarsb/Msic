@@ -1,4 +1,4 @@
-package com.Arun;
+
 
 public class F0_Main {
     public static void main(String[] args) {
@@ -14,6 +14,7 @@ public class F0_Main {
 
         // Or using direct initialization and declaration (shorthand syntax)
         int[] rollNo_2 = {2, 3, 4, 5, 6};
+        // if the type of array is int then all element should be int
 
         // Note: All elements in an array must be of the same specified datatype.
         // For example, the following line would cause a compile-time error:
@@ -21,6 +22,7 @@ public class F0_Main {
 
         // The reference variable (e.g., `rollNo_2`) points to an array object that holds elements of the specified type (e.g., `int`).
         // Array declaration vs. object creation:
+
         // int[] rollNo_2;       // Declaration: `rollNo_2` is defined in the stack memory.
         // rollNo_2 = new int[5]; // Object creation: The array object is created in the heap memory.
 
@@ -67,6 +69,7 @@ public class F0_Main {
 
         // The `null` literal:
         // - It's a special literal that represents the absence of a value or a reference.
+        // by default value of the refrence variable is pointing to
         // - It can be assigned to any non-primitive (object) type.
         String a = null; // Valid
         // int s = null; // Invalid: `null` cannot be assigned to a primitive type.
@@ -78,6 +81,7 @@ public class F0_Main {
         // - The `arr` reference variable is in the **stack**.
         // - It points to the array object in the **heap**.
         // - This array object contains 5 elements, each of which is a reference variable itself.
+        // each particular element of array is an object
         // - These 5 elements point to `String` objects, which are also stored in the **heap** (potentially at different memory locations).
         // arr[0] = null; by default it points to null if not assigned
         

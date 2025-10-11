@@ -1,4 +1,4 @@
-package com.Arun;
+
 
 import java.util.Arrays;
 
@@ -16,6 +16,7 @@ public class F3_PassinginFunction {
 
     }
     public static void Change(int[] str){
+        // str = new int[] {1,2,3,6}; this will create a new array not modify the old array
         str[0] = 99;
     }
 }
