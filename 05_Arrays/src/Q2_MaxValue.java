@@ -5,16 +5,23 @@ import java.util.Arrays;
 
 public class Q2_MaxValue {
     public static void main(String[] args) {
-        
-        int[] nums = { 0, 1, 34, 0, 5 };
-        System.out.println(Arrays.toString(nums));
-        System.out.println("Maximum Value of Array is: " + Max(nums));
+        int[] arr = { 2, 1, 4, 55, 22, 1 };
+        System.out.println(MaxValue(arr));
     }
 
-    public static int Max(int[] arr) {
+    public static int MaxValue(int[] arr) {
         int max = arr[0];
         for (int i = 0; i < arr.length; i++) {
-            if (arr[i]>max) {
+            if (arr[i] > max) {
+                max = arr[i];
+            }
+        }
+        return max;
+    }
+    public static int MaxValueInRange(int[] arr, int start, int end) {
+        int max = arr[start];
+        for (int i = start; i <= end; i++) {
+            if (arr[i] > max) {
                 max = arr[i];
             }
         }

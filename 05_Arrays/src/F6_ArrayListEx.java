@@ -1,5 +1,3 @@
-
-
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -7,20 +5,20 @@ public class F6_ArrayListEx {
     public static void main(String[] args) {
         // syntax
         ArrayList<Integer> list = new ArrayList<>();
-
+        // wrapper classes <Integer><String>
         // ArrayList<Integer> list = new ArrayList<>();
 
-        // list.add(69);
-        // list.add(1);
-        // list.add(23);
-        // list.add(6);
-        // list.add(49);
-        // list.add(29);
-        
+        list.add(69);
+        list.add(1);
+        list.add(23);
+        list.add(29);
+        list.add(6);
+        list.add(49);
 
-        // list.set(0, 99);
+        list.set(0, 99);
 
         // System.out.println(list.contains(2));
+        // false
 
         // list.remove(2);
         System.out.println(list);
@@ -35,6 +33,8 @@ public class F6_ArrayListEx {
 
         // list[i] // wrong
         System.out.println(list.get(1)); // correct
+        //list[i] will not work
+        
         for (int i = 0; i < 5; i++) {
             System.out.print(list.get(i) + " ");
         }
