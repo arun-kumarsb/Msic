@@ -16,6 +16,7 @@ public class F6_ArrayListEx {
         // list.add(6);
         // list.add(49);
         // list.add(29);
+        
 
         // list.set(0, 99);
 
