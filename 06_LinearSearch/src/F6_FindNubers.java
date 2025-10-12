@@ -1,4 +1,4 @@
-package com.arun;
+
 
 public class F6_FindNubers {
     public static void main(String[] args) {

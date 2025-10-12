@@ -1,4 +1,4 @@
-package com.arun;
+
 
 import java.util.Arrays;
 
@@ -15,15 +15,18 @@ public class F5_SearchIn2DArray {
         System.out.println(Max2DArray(arr));
     }
 
-    static int[] SearchIn2DArray(int target, int[][] arr) {
+    static int[] SearchIn2DArray(int target, int[][] arr){
+        if (arr.length == 0) {
+            return new int[] {-1,-1};
+        }
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr[i].length; j++) {
                 if (target == arr[i][j]) {
-                    return new int[] { i, j };
+                    return new int[] {i,j};
                 }
             }
         }
-        return new int[] { -1, -1 };
+        return new int[] {-1,-1};
     }
 
     // static int Min2DArray(int[][] arr) {
@@ -39,7 +42,7 @@ public class F5_SearchIn2DArray {
     // }
 
     static int Min2DArray(int[][] arr) {
-        int min = arr[0][0];
+        int min = Integer.MIN_VALUE;
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr[i].length; j++) {
                 if (arr[i][j] < min) {

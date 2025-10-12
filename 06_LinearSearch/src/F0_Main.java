@@ -1,4 +1,3 @@
-package com.arun;
 
 public class F0_Main {
     public static void main(String[] args) {
@@ -7,19 +6,28 @@ public class F0_Main {
         // ArrayList<Integer> list = new ArrayList<>();
 
         int[] arr = { 18, 12, 9, 14, 77, 50 };
-        Find(14, arr);
+        System.out.println(Find(164, arr));
         System.out.println(isExist(14, arr));
 
     }
 
-    public static void Find(int i, int[] arr) {
-        for (int j = 0; j < arr.length; j++) {
-            if (i == arr[j]) {
-                System.out.println("Found at index: " + j);
+    public static int Find(int num, int[] arr) {
+        int i;
+        for (i = 0; i < arr.length; i++) {
+            if (num == arr[i]) {
+                return i;
             }
         }
-
+        return -1;
     }
+    // public static int Find(int num, int[] arr) {
+    // for (int i = 0; i < arr.length; i++) {
+    // if(num == arr[i]){
+    // return i;
+    // }
+    // }
+    // return -1;
+    // }
 
     public static Boolean isExist(int target, int[] arr) {
         // for unsorted array
@@ -35,9 +43,6 @@ public class F0_Main {
                 temp = 1;
             }
         }
-        if (temp != 0) {
-            return true;
-        } else
-            return false;
+        return temp != 0;
     }
 }

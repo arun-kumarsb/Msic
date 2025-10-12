@@ -1,4 +1,4 @@
-package com.arun;
+
 
 import java.util.Arrays;
 
@@ -7,23 +7,21 @@ public class F2_SearchInString {
         String name = "Arun";
         char target = 'u';
 
-        System.out.println(SearchInString(name, target));
+        System.out.println(search(name, target));
 
         System.out.println(Arrays.toString(name.toCharArray()));
     }
 
-    static boolean SearchInString(String str, char target) {
-        if (str.length() == 0) {
+    static boolean search(String str, char target){
+        if(str.length() == 0){
             return false;
         }
-        // here length is a function 
-        for (int i = 0; i < str.length(); i++) {
-            if (target == str.charAt(i)) {
+        for (int index = 0; index < str.length(); index++) {
+            if (target == str.charAt(index)) {
+                System.out.println("At index: "+ index);
                 return true;
             }
         }
-
         return false;
-
     }
 }

@@ -1,4 +1,4 @@
-package com.arun;
+
 
 public class F7_MaximumWealth {
     public static void main(String[] args) {
