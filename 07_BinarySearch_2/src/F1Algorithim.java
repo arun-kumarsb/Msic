@@ -15,13 +15,13 @@ public class F1Algorithim {
             // if start and end are too large then there is a point when start + end exeed
             // the range of integer
             int mid = start + (end - start)/2;
-            if (target == nums[mid]) {
-                return mid;
+            if (target < nums[mid]) {
+                end = mid - 1;
             }
             if (target > nums[mid]) {
                 start = mid + 1;
             } else {
-                end = mid - 1;
+                return mid;
             }
         }
         return -1;
