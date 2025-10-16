@@ -1,5 +1,3 @@
-package com.Arun;
-
 import java.util.Scanner;
 
 public class Q6_Calculator {
@@ -16,7 +14,7 @@ public class Q6_Calculator {
                 if (op == '+') {
                     result = num1 + num2;
                 } else if (op == '-') {
-                    result = num1 - num2;
+                     result = num1 - num2;
                 } else if (op == '*') {
                     result = num1 * num2;
                 } else if (op == '/') {

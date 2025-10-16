@@ -1,4 +1,3 @@
-package com.Arun;
 
 public class Q5_Rev {
     // n = 23597 --> 79532

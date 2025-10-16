@@ -1,7 +1,7 @@
 public class Q5InfiniteArray {
     public static void main(String[] args) {
-        int[] arr = { 2, 3, 5, 6, 7, 8, 10, 11, 12, 15, 20, 23, 30 };
-        System.out.println(InfiniteArray(arr, 7));
+        int[] arr = { 2, 3, 5, 6, 7, 8, 10, 11, 12, 15, 20, 23, 30, 40 };
+        System.out.println(InfiniteArray(arr, 15));
     }
     static int InfiniteArray(int[] arr, int target){
         int start = 0;
